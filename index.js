@@ -27,8 +27,6 @@ const COOLDOWN_TIME = 10 * 1000; // 10 seconds
 client.once('ready', async () => {
     console.log(`Logged in as ${client.user.tag}`);
 
-    const channel = await client.channels.fetch(LINKS_CHANNEL_ID);
-    await channel.send(linksMessage);
 });
 
 client.on('messageCreate', async (message) => {
@@ -64,3 +62,4 @@ return message.reply(`❌ Please use this command in ${commandsChannel}.`);
 });
 
 client.login(TOKEN);
+
