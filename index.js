@@ -8,7 +8,7 @@ const client = new Client({
     ]
 });
 
-const TOKEN = 'MTQ2MDg1NDI0MjU5MTExNzUwNA.GXAoSu.bY9klXE4Kg4bXguoV0LJDZ0nyuZwNO825c4fXI';
+const TOKEN = process.env.TOKEN;
 const LINKS_CHANNEL_ID = '1460850841610092678';
 const COMMANDS_CHANNEL_ID = '1460847537232678942';
 
